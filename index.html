@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+
+    
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBnZ2Ed3UfyieWC4M1OrUK6PJBkb-M4-bA",
+      authDomain: "todo-app-bdf22.firebaseapp.com",
+      projectId: "todo-app-bdf22",
+      storageBucket: "todo-app-bdf22.appspot.com",
+      messagingSenderId: "185501352372",
+      appId: "1:185501352372:web:c6ae63cab796017df9f2e1",
+      measurementId: "G-NLF3TD0VK8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+</head>
+<body>
+<form action="#">
+    <div>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="Password" placeholder="Password">
+        <button onclick="signup()">SignUp</button>
+    </div>
+    </form>
+<br>
+<br>
+
+     <form action="#">
+    <div>
+        <input type="email" id="login_email" placeholder="LOGIN_Email">
+        <input type="password" id="login_Password" placeholder="LOGIN_Password">
+        <button onclick="signin()">SignIN</button>
+    </div>
+    </form>
+
+
+    <hr>
+    <div>
+        <input type="text" id="input" placeholder="Enter ToDo">
+        <button onclick="AddTodo()">ADD TODO</button>
+        <button onclick="Dell_All()">DELL ALL</button>
+
+    </div>
+    <button onclick="fecebook_login()">fecebook login</button>
+<div>
+    <ul id="list"></ul>
+
+    </ul>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
